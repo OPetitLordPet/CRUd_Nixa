@@ -52,6 +52,7 @@
 <script>
 
     import axios from 'axios';
+
     export default {
         name: "EditClient.vue",
         data() {
@@ -66,13 +67,13 @@
             }
         },
         mounted() {
-        axios.get('http://127.0.0.1:8000/olivier_petit_crud_nixa_app/' + this.$route.params.id)
-            .then( response => {
-                this.client = response.data
-            });
-         },
+            axios.get('http://127.0.0.1:8000/olivier_petit_crud_nixa_app/' + this.$route.params.id)
+                .then(response => {
+                    this.client = response.data
+                });
+        },
         methods: {
-        update: function (e) {
+            update: function (e) {
                 axios
                     .put(`http://127.0.0.1:8000/olivier_petit_crud_nixa_app/${client.id}`,
                         this.client
@@ -80,8 +81,8 @@
                     .then(response => {
                         this.$router.push('/');
                     })
-        }
-    },
+            }
+        },
     }
 </script>
 
