@@ -5,6 +5,7 @@ Technical test for Nixa
 # Backend:
  - djando
  - django rest_framework
+ - django-cors-headers
 # Frontend:
   - vue-cli
   - axios
