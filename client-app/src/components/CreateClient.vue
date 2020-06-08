@@ -34,6 +34,16 @@
                     placeholder="Enter your phone number"
                 >
             </div>
+            <div class="form-group">
+                <label for="onboarding_date">Onboarding date</label>
+                <input
+                        type="datetime-local"
+                        class="form-control"
+                        name="onboarding_date"
+                        id="onboarding_date"
+                        v-model="client.onboarding_date"
+                >
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
@@ -49,6 +59,7 @@ export default {
                 first_name: '',
                 last_name: '',
                 phone_number: '',
+                onboarding_date:'',
             },
             submitted: false
         }
