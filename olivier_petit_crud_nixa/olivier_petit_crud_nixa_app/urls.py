@@ -1,5 +1,4 @@
 from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
 from olivier_petit_crud_nixa_app import views
 
 urlpatterns = [
